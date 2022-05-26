@@ -23,6 +23,6 @@ jobs:
     - name: Build Typescript
       run: cd DotnetTemplate.Web && npm install
     - name: Run lint
-      run: npm run lint
+      run: cd DotnetTemplate.Web && npm run lint
     - name: Run Typescript
-      run: npm t
+      run: cd DotnetTemplate.Web && npm t
