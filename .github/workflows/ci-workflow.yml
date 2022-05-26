@@ -20,4 +20,9 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-
+    - name: Build Typescript
+      run: npm install
+    - name: Run lint
+      run: npm run lint
+    - name: Run Typescript
+      run: npm t
